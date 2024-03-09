@@ -1,0 +1,9 @@
+<div class="calculator">
+    <input [(ngModel)]="expression" class="display" disabled />
+    <div class="buttons">
+      <button *ngFor="let button of buttons" (click)="onButtonClick(button)">
+        {{ button }}
+      </button>
+    </div>
+  </div>
+  
